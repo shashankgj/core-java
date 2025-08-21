@@ -1,41 +1,15 @@
-public class Animal {
+package com.xworkz.inheritance;
+
+public class Animal
+{
     private String name;
-    private String habitat;
-    private int legs;
 
-    public static int lifespan;
-
-    static {
-        System.out.println("static block in Animal");
-        lifespan = 10;
-    }
-
+    public void setName(String name)
     {
-        System.out.println("non static block in Animal");
-        lifespan = 15;
+        this.name = name;
     }
-
-    public void setname(String animalName) {
-        name = animalName;
-    }
-
-    public void sethabitat(String animalHabitat) {
-        habitat = animalHabitat;
-    }
-
-    public void setlegs(int animalLegs) {
-        legs = animalLegs;
-    }
-
-    public String getname() {
+    public String getName()
+    {
         return name;
-    }
-
-    public String gethabitat() {
-        return habitat;
-    }
-
-    public int getlegs() {
-        return legs;
     }
 }
