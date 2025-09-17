@@ -1,26 +1,9 @@
-package com.xworkz.inheritance;
+package com.xworkz.abstraction;
 
-public class Car extends Vehicle
-{
-    private int seatingCapacity;
-    private String fuelType;
+public class Car implements Vehicle{
 
-    public void setSeatingCapacity(int seatingCapacity)
-    {
-        this.seatingCapacity = seatingCapacity;
-    }
-    public int getSeatingCapacity()
-    {
-        return seatingCapacity;
-    }
-
-    public void setFuelType(String fuelType)
-    {
-        this.fuelType = fuelType;
-    }
-    public String getFuelType()
-    {
-        return fuelType;
+    @Override
+    public void VehicleType() {
+        System.out.println("Car is a 4 wheeler");
     }
 }
-

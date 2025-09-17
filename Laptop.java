@@ -1,9 +1,9 @@
-package com.xworkz.polymorphism;
+package com.xworkz.abstraction;
 
+public class Laptop implements Gadgets{
 
-class Laptop {
-    public double calculatePrice(int quantity) {
-        return quantity * 30000;
+    @Override
+    public void Features() {
+        System.out.println("controlled using keyboard");
     }
 }
-

@@ -1,11 +1,12 @@
-package com.xworkz.inheritance;
+package com.xworkz.abstraction;
 
-public class AnimalRunner
-{
+public class AnimalRunner {
     public static void main(String[] args)
     {
-        Animal animal = new Animal();
-        animal.setName("dog");
-        System.out.println(animal.getName());
+        Animal animal = new DomasticAnimals();
+        animal.Behaviour();
+
+        Animal animal1 = new WildAnimals();
+        animal1.Behaviour();
     }
 }

@@ -1,26 +1,9 @@
-package com.xworkz.inheritance;
+package com.xworkz.abstraction;
 
-public class Bus extends Vehicle
-{
-    private int capacity;
-    private String serviceType;
+public class Bus implements Vehicle{
 
-    public void setCapacity(int capacity)
-    {
-        this.capacity = capacity;
-    }
-    public int getCapacity()
-    {
-        return capacity;
-    }
-
-    public void setServiceType(String serviceType)
-    {
-        this.serviceType = serviceType;
-    }
-    public String getServiceType()
-    {
-        return serviceType;
+    @Override
+    public void VehicleType() {
+        System.out.println("Bus is a 6 wheeler");
     }
 }
-

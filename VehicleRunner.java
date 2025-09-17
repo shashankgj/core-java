@@ -1,12 +1,12 @@
-package com.xworkz.inheritance;
+package com.xworkz.abstraction;
 
 public class VehicleRunner {
-
     public static void main(String[] args)
     {
-        Vehicle vehicle = new Vehicle();
-        vehicle.setName("Vehicle");
-        System.out.println(vehicle.getName());
+        Vehicle vehicle = new Bus();
+        vehicle.VehicleType();
+
+        Vehicle vehicle1 = new Car();
+        vehicle1.VehicleType();
     }
 }
-
